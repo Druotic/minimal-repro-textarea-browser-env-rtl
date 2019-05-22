@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { render, fireEvent, cleanup, prettyDOM, wait } from 'react-testing-library';
+import { render, cleanup, prettyDOM } from 'react-testing-library';
 import userEvent from 'user-event';
 import browserEnv from 'browser-env';
 
@@ -18,9 +18,6 @@ const TextArea = function () {
   );
 };
 
-
-
-
 // 1
 
 let root = render(<TextArea />);
@@ -33,8 +30,6 @@ root.getByText('Hello world!');
 cleanup();
 
 console.log('----- PASSED TEST ONE -----\n\n\n\n');
-
-
 
 // 2
 
